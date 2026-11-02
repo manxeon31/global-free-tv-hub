@@ -1,5 +1,5 @@
-import {filterChannels,playbackDecision,httpsUrl} from './policy.js';
-import {loadYouTubeAPI,youtubeError} from './youtube-player.js';
+import {filterChannels,playbackDecision,httpsUrl} from './policy.js?v=3';
+import {loadYouTubeAPI,youtubeError} from './youtube-player.js?v=3';
 const $=s=>document.querySelector(s);
 let channels=[],selected=null,hls=null,youtube=null,generation=0,saved=[];
 try{const raw=JSON.parse(localStorage.getItem('atlas-saved')||'[]');if(Array.isArray(raw))saved=raw.filter(x=>typeof x==='string');}catch{}
@@ -59,7 +59,7 @@ $('#saved-filter').onclick=()=>{state.savedOnly=!state.savedOnly;render();};$('#
 $('#reset-filters').onclick=()=>{Object.assign(state,{query:'',country:'',language:'',category:'',savedOnly:false,playableOnly:false});$('#search').value='';$('#country').value='';$('#language').value='';for(const b of $('#categories').children)b.setAttribute('aria-pressed',b.dataset.category==='');render();};
 $('#saved-nav').onclick=()=>{state.savedOnly=true;render();$('#explore').scrollIntoView();};
 try{
-  const response=await fetch('./catalog.json');if(!response.ok)throw Error('Catalog unavailable');const data=await response.json();channels=data.channels.filter(c=>httpsUrl(c.officialUrl));
+  const response=await fetch('./catalog.json?v=3');if(!response.ok)throw Error('Catalog unavailable');const data=await response.json();channels=data.channels.filter(c=>httpsUrl(c.officialUrl));
   for(const field of ['country','language'])for(const value of [...new Set(channels.map(c=>c[field]))].sort()){const option=el('option','',value);option.value=value;$('#'+field).append(option);}
   for(const category of ['',...new Set(channels.map(c=>c.category))]){const b=el('button','',category||'All channels');b.dataset.category=category;b.setAttribute('aria-pressed',!category);b.onclick=()=>{state.category=category;for(const sibling of $('#categories').children)sibling.setAttribute('aria-pressed',sibling===b);render();};$('#categories').append(b);}render();
 }catch{$('#result-count').textContent='Channel collection unavailable';$('#empty').hidden=false;$('#empty').textContent='We could not load the collection. Please refresh or try again later.';}

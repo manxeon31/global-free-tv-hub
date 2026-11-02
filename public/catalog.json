@@ -1,5 +1,5 @@
 {
-  "version": 2,
+  "version": 3,
   "reviewedAt": "2026-11-01",
   "channels": [
     {
@@ -70,7 +70,8 @@
       "videoId": "gCNeDWCI0vo",
       "rightsEvidence": "https://www.youtube.com/watch?v=gCNeDWCI0vo",
       "reviewExpiresAt": "2026-12-01T00:00:00Z",
-      "embedStatus": "configured"
+      "embedStatus": "current-source-checked",
+      "officialChannel": "https://www.youtube.com/@aljazeeraenglish"
     },
     {
       "id": "france24",
@@ -92,11 +93,12 @@
         "status": "provider-controlled"
       },
       "drm": "unknown",
-      "sourceEvidence": "https://www.youtube.com/watch?v=Ap-UM1O9RBU",
-      "videoId": "Ap-UM1O9RBU",
-      "rightsEvidence": "https://www.youtube.com/watch?v=Ap-UM1O9RBU",
+      "sourceEvidence": "https://www.youtube.com/watch?v=HvZt-nh9sGg",
+      "videoId": "HvZt-nh9sGg",
+      "rightsEvidence": "https://www.youtube.com/watch?v=HvZt-nh9sGg",
       "reviewExpiresAt": "2026-12-01T00:00:00Z",
-      "embedStatus": "configured"
+      "embedStatus": "current-source-checked",
+      "officialChannel": "https://www.youtube.com/@France24_en"
     },
     {
       "id": "dw",
@@ -118,11 +120,12 @@
         "status": "provider-controlled"
       },
       "drm": "unknown",
-      "sourceEvidence": "https://www.youtube.com/watch?v=Lh5GXucy2EU",
-      "videoId": "Lh5GXucy2EU",
-      "rightsEvidence": "https://www.youtube.com/watch?v=Lh5GXucy2EU",
+      "sourceEvidence": "https://www.youtube.com/watch?v=LuKwFajn37U",
+      "videoId": "LuKwFajn37U",
+      "rightsEvidence": "https://www.youtube.com/watch?v=LuKwFajn37U",
       "reviewExpiresAt": "2026-12-01T00:00:00Z",
-      "embedStatus": "configured"
+      "embedStatus": "current-source-checked",
+      "officialChannel": "https://www.youtube.com/@DWNews"
     },
     {
       "id": "nhkworld",
@@ -166,11 +169,12 @@
         "status": "provider-controlled"
       },
       "drm": "unknown",
-      "sourceEvidence": "https://www.youtube.com/watch?v=EqC2bH0M9lM",
-      "videoId": "EqC2bH0M9lM",
-      "rightsEvidence": "https://www.youtube.com/watch?v=EqC2bH0M9lM",
+      "sourceEvidence": "https://www.youtube.com/watch?v=a47ckXKZjxI",
+      "videoId": "a47ckXKZjxI",
+      "rightsEvidence": "https://www.youtube.com/watch?v=a47ckXKZjxI",
       "reviewExpiresAt": "2026-12-01T00:00:00Z",
-      "embedStatus": "configured"
+      "embedStatus": "current-source-checked",
+      "officialChannel": "https://www.youtube.com/@FRANCE24"
     },
     {
       "id": "france24-es",
@@ -192,11 +196,12 @@
         "status": "provider-controlled"
       },
       "drm": "unknown",
-      "sourceEvidence": "https://www.youtube.com/watch?v=Y-IlMeCCtIg",
-      "videoId": "Y-IlMeCCtIg",
-      "rightsEvidence": "https://www.youtube.com/watch?v=Y-IlMeCCtIg",
+      "sourceEvidence": "https://www.youtube.com/watch?v=zTv0hCakAhg",
+      "videoId": "zTv0hCakAhg",
+      "rightsEvidence": "https://www.youtube.com/watch?v=zTv0hCakAhg",
       "reviewExpiresAt": "2026-12-01T00:00:00Z",
-      "embedStatus": "configured"
+      "embedStatus": "current-source-checked",
+      "officialChannel": "https://www.youtube.com/@France24_es"
     },
     {
       "id": "france24-ar",
@@ -240,11 +245,12 @@
         "status": "provider-controlled"
       },
       "drm": "unknown",
-      "sourceEvidence": "https://www.youtube.com/watch?v=jKHvbJe9c_Y",
-      "videoId": "jKHvbJe9c_Y",
-      "rightsEvidence": "https://www.youtube.com/watch?v=jKHvbJe9c_Y",
+      "sourceEvidence": "https://www.youtube.com/watch?v=M3HKLzjvKPc",
+      "videoId": "M3HKLzjvKPc",
+      "rightsEvidence": "https://www.youtube.com/watch?v=M3HKLzjvKPc",
       "reviewExpiresAt": "2026-12-01T00:00:00Z",
-      "embedStatus": "configured"
+      "embedStatus": "current-source-checked",
+      "officialChannel": "https://www.youtube.com/@NASA"
     },
     {
       "id": "skynews",
@@ -288,11 +294,12 @@
         "status": "provider-controlled"
       },
       "drm": "unknown",
-      "sourceEvidence": "https://www.youtube.com/watch?v=sPgqEHsONK8",
-      "videoId": "sPgqEHsONK8",
-      "rightsEvidence": "https://www.youtube.com/watch?v=sPgqEHsONK8",
+      "sourceEvidence": "https://www.youtube.com/watch?v=pykpO5kQJ98",
+      "videoId": "pykpO5kQJ98",
+      "rightsEvidence": "https://www.youtube.com/watch?v=pykpO5kQJ98",
       "reviewExpiresAt": "2026-12-01T00:00:00Z",
-      "embedStatus": "configured"
+      "embedStatus": "current-source-checked",
+      "officialChannel": "https://www.youtube.com/@euronews"
     },
     {
       "id": "africanews",
@@ -336,11 +343,12 @@
         "status": "provider-controlled"
       },
       "drm": "unknown",
-      "sourceEvidence": "https://www.youtube.com/watch?v=XWq5kBlakcQ",
-      "videoId": "XWq5kBlakcQ",
-      "rightsEvidence": "https://www.youtube.com/watch?v=XWq5kBlakcQ",
+      "sourceEvidence": "https://www.youtube.com/watch?v=-PWMxjBgr0k",
+      "videoId": "-PWMxjBgr0k",
+      "rightsEvidence": "https://www.youtube.com/watch?v=-PWMxjBgr0k",
       "reviewExpiresAt": "2026-12-01T00:00:00Z",
-      "embedStatus": "configured"
+      "embedStatus": "current-source-checked",
+      "officialChannel": "https://www.youtube.com/@channelnewsasia"
     },
     {
       "id": "trtworld",
@@ -362,11 +370,12 @@
         "status": "provider-controlled"
       },
       "drm": "unknown",
-      "sourceEvidence": "https://www.youtube.com/watch?v=eIBtiuI1eQ8",
-      "videoId": "eIBtiuI1eQ8",
-      "rightsEvidence": "https://www.youtube.com/watch?v=eIBtiuI1eQ8",
+      "sourceEvidence": "https://www.youtube.com/watch?v=adUSssjOCLY",
+      "videoId": "adUSssjOCLY",
+      "rightsEvidence": "https://www.youtube.com/watch?v=adUSssjOCLY",
       "reviewExpiresAt": "2026-12-01T00:00:00Z",
-      "embedStatus": "configured"
+      "embedStatus": "current-source-checked",
+      "officialChannel": "https://www.youtube.com/@trtworld"
     },
     {
       "id": "abc-us",

@@ -6,9 +6,9 @@ Nine initial embedded references were found in official broadcaster YouTube list
 
 Review evidence:
 
-- [France 24 English](https://www.youtube.com/watch?v=Ap-UM1O9RBU), [French](https://www.youtube.com/watch?v=EqC2bH0M9lM), [Spanish](https://www.youtube.com/watch?v=Y-IlMeCCtIg)
-- [DW News](https://www.youtube.com/watch?v=Lh5GXucy2EU), [Al Jazeera English](https://www.youtube.com/watch?v=gCNeDWCI0vo), [TRT World](https://www.youtube.com/watch?v=eIBtiuI1eQ8)
-- [CNA](https://www.youtube.com/watch?v=XWq5kBlakcQ), [Euronews](https://www.youtube.com/watch?v=sPgqEHsONK8), [NASA ISS](https://www.youtube.com/watch?v=jKHvbJe9c_Y)
+- [France 24 English](https://www.youtube.com/watch?v=HvZt-nh9sGg), [French](https://www.youtube.com/watch?v=a47ckXKZjxI), [Spanish](https://www.youtube.com/watch?v=zTv0hCakAhg)
+- [DW News](https://www.youtube.com/watch?v=LuKwFajn37U), [Al Jazeera English](https://www.youtube.com/watch?v=gCNeDWCI0vo), [TRT World](https://www.youtube.com/watch?v=adUSssjOCLY)
+- [CNA](https://www.youtube.com/watch?v=-PWMxjBgr0k), [Euronews](https://www.youtube.com/watch?v=pykpO5kQJ98), [NASA ISS](https://www.youtube.com/watch?v=M3HKLzjvKPc)
 - [YouTube embedding instructions](https://support.google.com/youtube/answer/171780), [IFrame API and error events](https://developers.google.com/youtube/iframe_api_reference)
 
 The player loads only after the visitor clicks Load in-app player. A disclosure explains the YouTube connection. Privacy-enhanced embeds retain provider controls, ads, and branding. The visitor presses Play inside the official video; Atlas does not force autoplay. Error handling covers disabled/private/ended streams, embed prohibition, missing referrer, and general browser/territory failures. Official-source links remain visible. Closing the dialog or leaving the page destroys the player; generation checks prevent late API callbacks mounting an old stream after closure. No accounts, cookies, keys, or regional controls are bypassed.
@@ -20,3 +20,5 @@ The Play here filter selects currently configured, non-expired in-app players. S
 Pages deployment now runs automatically on pushes to main, as well as manually, and tests/build must succeed before deployment. Browser verification against the deployed origin is needed because YouTube requires a real referring website and provider responses can differ across clients and territories. The local preview CSP must allow YouTube frames and scripts; Pages does not use the preview server's headers.
 
 Maintenance: review live IDs at least monthly and immediately after a playback failure report; disable failed embeds or update them only from official broadcaster listings. Expired entries fall back to external viewing without losing the directory entry. Do not silently replace an official stream with a third-party restream.
+
+Live-source refresh: outdated indexed video IDs were replaced using the broadcaster channel’s current Live destination. NASA ISS was selected from the LIVE cards on NASA’s official Streams page. This validates current source identity; playback checks are recorded separately below.
