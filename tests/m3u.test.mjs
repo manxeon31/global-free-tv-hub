@@ -1,0 +1,2 @@
+import {test} from 'node:test';import assert from 'node:assert/strict';import {parseM3U} from '../scripts/m3u.mjs';
+test('M3U preserves quoted commas, CRLF, metadata and HTTPS; rejects unsafe entries',()=>{const rows=parseM3U('\uFEFF#EXTM3U\r\n#EXTINF:-1 tvg-id="A.fr" group-title="News, World",A, news\r\n#EXTVLCOPT:http-referrer=ignored\r\nhttps://example.com/a.m3u8\r\n#EXTINF:-1,B\nhttp://example.com/b\n#EXTINF:-1,C\njavascript:alert(1)');assert.deepEqual(rows,[{upstreamId:'A.fr',name:'A, news',group:'News, World',url:'https://example.com/a.m3u8'}]);});
