@@ -1,7 +1,7 @@
 import {filterChannels,playbackDecision,httpsUrl} from './policy.js?v=3';
 import {loadYouTubeAPI,youtubeError} from './youtube-player.js?v=3';
 const $=s=>document.querySelector(s);
-let channels=[],selected=null,hls=null,youtube=null,generation=0,saved=[];
+let channels=[],selected=null,hls=null,youtube=null,generation=0,saved=[],selectionTrigger=null;
 try{const raw=JSON.parse(localStorage.getItem('atlas-saved')||'[]');if(Array.isArray(raw))saved=raw.filter(x=>typeof x==='string');}catch{}
 const state={query:'',country:'',language:'',category:'',savedOnly:false,playableOnly:false};
 function el(tag,cls,text){const e=document.createElement(tag);if(cls)e.className=cls;if(text!==undefined)e.textContent=text;return e;}
@@ -17,21 +17,24 @@ function render(){
     art.append(el('div','art-pattern'),el('span','badge',decision.allowed?'▶ PLAY HERE':c.verification==='candidate'?'OFFICIAL SITE · CHECK PENDING':'OFFICIAL SITE'),el('span','wordmark',c.mark));
     const favorite=el('button','favorite',saved.includes(c.id)?'★':'☆');favorite.setAttribute('aria-label',`${saved.includes(c.id)?'Unsave':'Save'} ${c.name}`);favorite.setAttribute('aria-pressed',saved.includes(c.id));favorite.onclick=()=>save(c.id);art.append(favorite);
     const body=el('div','card-body');body.append(el('h3','',c.name),el('p','meta',`${c.country} / ${c.language}`),el('p','description',c.description));
-    const bottom=el('div','card-bottom'),open=el('button','',decision.allowed?'Watch here ▶':'Explore channel ↗');open.setAttribute('aria-label',`${decision.allowed?'Watch':'Explore'} ${c.name}`);open.onclick=()=>show(c);bottom.append(el('span','',c.category),open);body.append(bottom);card.append(art,body);$('#grid').append(card);
+    const bottom=el('div','card-bottom'),open=el('button','',decision.allowed?'Watch here ▶':'Explore channel ↗');open.setAttribute('aria-label',`${decision.allowed?'Watch':'Explore'} ${c.name}`);open.onclick=()=>show(c,open);bottom.append(el('span','',c.category),open);body.append(bottom);card.append(art,body);$('#grid').append(card);
   }
 }
 function stop(){
   generation++;if(youtube){youtube.destroy();youtube=null;}if(hls){hls.destroy();hls=null;}
   $('#embed-wrap').replaceChildren();const video=$('#player');video.pause();video.removeAttribute('src');video.load();video.hidden=true;$('#player-wrap').hidden=true;$('#play').disabled=false;
 }
-function show(c){
+function show(c,trigger){
+  selectionTrigger=trigger;
   stop();selected=c;$('#detail-name').textContent=c.name;$('#detail-category').textContent=`${c.country} / ${c.category}`;$('#detail-description').textContent=c.description;
   const decision=playbackDecision(c);$('#detail-policy').textContent=decision.reason;
   $('#provider-consent').hidden=!decision.allowed||c.mode!=='youtube';
   $('#watch').href=httpsUrl(c.officialUrl)?c.officialUrl:'./sources.html';$('#play').hidden=!decision.allowed;$('#play').textContent=c.mode==='youtube'?'Load in-app player ▶':'Play approved feed ▶';
   $('#save-channel').textContent=saved.includes(c.id)?'★ Saved channel':'☆ Save channel';
   $('#detail-source').textContent=`Source review: ${c.reviewedAt}. ${c.mode==='youtube'?'Official broadcaster stream listed on YouTube. Live IDs and embedding availability can change; use the official site if playback fails.':c.verification==='page-verified'?'Official page inspected; playback depends on the broadcaster.':'Official-site candidate; automated page verification was unavailable.'}`;
-  $('#channel-dialog').showModal();
+  $('#watch-panel').hidden=false;
+  $('#watch-panel').scrollIntoView({behavior:matchMedia('(prefers-reduced-motion: reduce)').matches?'instant':'smooth',block:'start'});
+  if(decision.allowed) void $('#play').onclick();
 }
 $('#play').onclick=async()=>{
   const c=selected;if(!c||!playbackDecision(c).allowed)return;stop();const token=generation;
@@ -52,7 +55,7 @@ $('#play').onclick=async()=>{
   else if(window.Hls?.isSupported()){hls=new window.Hls({enableWorker:true,manifestLoadingMaxRetry:2,fragLoadingMaxRetry:2});hls.loadSource(c.streamUrl);hls.attachMedia(video);hls.on(window.Hls.Events.MANIFEST_PARSED,()=>video.play().catch(()=>{if(token===generation)status.textContent='Press Play in the video.';}));hls.on(window.Hls.Events.ERROR,(_,data)=>{if(data.fatal){hls?.destroy();hls=null;failHls();}});}
   else fail('This browser does not support HLS playback.');
 };
-$('#save-channel').onclick=()=>selected&&save(selected.id);$('#close-dialog').onclick=()=>$('#channel-dialog').close();$('#channel-dialog').addEventListener('close',stop);window.addEventListener('pagehide',stop);
+$('#save-channel').onclick=()=>selected&&save(selected.id);$('#close-player').onclick=()=>{stop();$('#watch-panel').hidden=true;if(selectionTrigger?.isConnected)selectionTrigger.focus();else $('#search').focus();};window.addEventListener('pagehide',stop);
 $('#search').oninput=e=>{state.query=e.target.value;render();};
 for(const field of ['country','language'])$('#'+field).onchange=e=>{state[field]=e.target.value;render();};
 $('#saved-filter').onclick=()=>{state.savedOnly=!state.savedOnly;render();};$('#playable-filter').onclick=()=>{state.playableOnly=!state.playableOnly;render();};

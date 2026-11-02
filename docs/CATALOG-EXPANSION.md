@@ -22,3 +22,5 @@ Pages deployment now runs automatically on pushes to main, as well as manually, 
 Maintenance: review live IDs at least monthly and immediately after a playback failure report; disable failed embeds or update them only from official broadcaster listings. Expired entries fall back to external viewing without losing the directory entry. Do not silently replace an official stream with a third-party restream.
 
 Live-source refresh: outdated indexed video IDs were replaced using the broadcaster channel’s current Live destination. NASA ISS was selected from the LIVE cards on NASA’s official Streams page. This validates current source identity; playback checks are recorded separately below.
+
+Playback layout update: Watch here now opens an inline viewing section above the filters and loads the official player immediately. There is no modal overlay. The channel list remains usable while watching. Close player stops media, clears the iframe, and returns focus to the selected channel. The broadcaster still requires the visitor to press Play in its video controls.
