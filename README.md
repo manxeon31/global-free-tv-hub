@@ -1,6 +1,6 @@
 # Atlas · Global Free TV Hub
 
-A web-first, curated television discovery MVP. Search 50 broadcaster destinations across 27 countries and 11 languages, filter by country/language/category, save channels locally, and inspect source status. Responsive vanilla JavaScript with no framework build overhead. HLS.js is bundled for explicitly approved direct feeds; **nine entries offer an official YouTube player in the app; remaining entries link to the broadcaster**.
+A web-first, curated television discovery MVP. Search 50 broadcaster destinations across 27 countries and 11 languages, filter by country/language/category, save channels locally, and inspect source status. Responsive vanilla JavaScript with no framework build overhead. HLS.js is bundled for explicitly approved direct feeds; **32 entries offer an official YouTube player in the app; 18 retain official-site viewing**.
 
 ## Run
 
@@ -47,3 +47,5 @@ No accounts, production database, EPG, source health dashboard, automated rights
 HLS.js is BSD-2-Clause; its license is copied to the built vendor directory. Broadcaster names remain their owners' marks; artwork uses text rather than copied logos. Project licensing must be chosen by the repository owner before external redistribution.
 
 See [catalog expansion notes](docs/CATALOG-EXPANSION.md) for official embedded-stream references, provider controls, and review rules.
+
+See [streaming-source review](docs/STREAM-SOURCES.md) for the review of every remaining station, coverage differences, short-lived program streams, and unresolved sources.

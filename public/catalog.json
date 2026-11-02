@@ -1,6 +1,6 @@
 {
-  "version": 3,
-  "reviewedAt": "2026-11-01",
+  "version": 4,
+  "reviewedAt": "2026-11-02",
   "channels": [
     {
       "id": "fashiontv",
@@ -22,7 +22,11 @@
         "status": "provider-controlled"
       },
       "drm": "unknown",
-      "sourceEvidence": "https://www.fashiontv.com/"
+      "sourceEvidence": "https://www.fashiontv.com/",
+      "streamStatus": "official-player-unavailable",
+      "streamNote": "The official FashionTV site publishes a Dailymotion player, but it returned Forbidden in the test browser. Use the broadcaster site.",
+      "streamEvidence": "https://company.fashiontv.com/live/",
+      "streamReviewedAt": "2026-11-02"
     },
     {
       "id": "nasa",
@@ -44,7 +48,11 @@
         "status": "provider-controlled"
       },
       "drm": "unknown",
-      "sourceEvidence": "https://www.nasa.gov/live/"
+      "sourceEvidence": "https://www.nasa.gov/live/",
+      "streamStatus": "scheduled-coverage",
+      "streamNote": "NASA’s general live page lists scheduled mission coverage. Use NASA ISS Live for a continuous in-app feed.",
+      "streamEvidence": "https://www.nasa.gov/live/",
+      "streamReviewedAt": "2026-11-02"
     },
     {
       "id": "aljazeera",
@@ -139,15 +147,23 @@
       "description": "Stories, culture, and perspectives from Japan and the rest of Asia.",
       "officialUrl": "https://www3.nhk.or.jp/nhkworld/en/live/",
       "source": "official",
-      "verification": "candidate",
-      "reviewedAt": "2026-11-01",
-      "mode": "external",
-      "rights": "link-only",
+      "verification": "official-stream-listed",
+      "reviewedAt": "2026-11-02",
+      "mode": "youtube",
+      "rights": "provider-embed",
       "geo": {
         "status": "provider-controlled"
       },
       "drm": "unknown",
-      "sourceEvidence": "https://www3.nhk.or.jp/nhkworld/en/live/"
+      "sourceEvidence": "https://www.youtube.com/watch?v=IimtbuqYIE8",
+      "videoId": "IimtbuqYIE8",
+      "officialChannel": "https://www.youtube.com/@NHKWORLDJAPAN",
+      "streamNote": "Official NHK news stream. Some programs from the full television schedule are not carried here.",
+      "rightsEvidence": "https://www.youtube.com/watch?v=IimtbuqYIE8",
+      "embedStatus": "source-checked-awaiting-browser-test",
+      "reviewExpiresAt": "2026-12-02T00:00:00Z",
+      "streamStatus": "official-embed",
+      "streamCoverage": "news-only"
     },
     {
       "id": "france24-fr",
@@ -212,18 +228,25 @@
       "language": "Arabic",
       "category": "News",
       "officialUrl": "https://www.france24.com/ar/live",
-      "verification": "candidate",
+      "verification": "official-stream-listed",
       "description": "International news and current affairs in Arabic.",
       "color": "#367c9a",
       "source": "official",
-      "reviewedAt": "2026-11-01",
-      "mode": "external",
-      "rights": "link-only",
+      "reviewedAt": "2026-11-02",
+      "mode": "youtube",
+      "rights": "provider-embed",
       "geo": {
         "status": "provider-controlled"
       },
       "drm": "unknown",
-      "sourceEvidence": "https://www.france24.com/ar/live"
+      "sourceEvidence": "https://www.youtube.com/watch?v=93g513Uth98",
+      "videoId": "93g513Uth98",
+      "officialChannel": "https://www.youtube.com/@France24_ar",
+      "streamNote": "Official France 24 Arabic stream.",
+      "rightsEvidence": "https://www.youtube.com/watch?v=93g513Uth98",
+      "embedStatus": "source-checked-awaiting-browser-test",
+      "reviewExpiresAt": "2026-12-02T00:00:00Z",
+      "streamStatus": "official-embed"
     },
     {
       "id": "nasa-iss",
@@ -261,18 +284,25 @@
       "language": "English",
       "category": "News",
       "officialUrl": "https://news.sky.com/watch-live",
-      "verification": "page-verified",
+      "verification": "official-stream-listed",
       "description": "British and international news through the official Sky News player.",
       "color": "#887341",
       "source": "official",
-      "reviewedAt": "2026-11-01",
-      "mode": "external",
-      "rights": "link-only",
+      "reviewedAt": "2026-11-02",
+      "mode": "youtube",
+      "rights": "provider-embed",
       "geo": {
         "status": "provider-controlled"
       },
       "drm": "unknown",
-      "sourceEvidence": "https://news.sky.com/watch-live"
+      "sourceEvidence": "https://www.youtube.com/watch?v=umLWFz4izTM",
+      "videoId": "umLWFz4izTM",
+      "officialChannel": "https://www.youtube.com/@SkyNews",
+      "streamNote": "Official Sky News live stream.",
+      "rightsEvidence": "https://www.youtube.com/watch?v=umLWFz4izTM",
+      "embedStatus": "source-checked-awaiting-browser-test",
+      "reviewExpiresAt": "2026-12-02T00:00:00Z",
+      "streamStatus": "official-embed"
     },
     {
       "id": "euronews",
@@ -310,18 +340,25 @@
       "language": "English",
       "category": "News",
       "officialUrl": "https://www.africanews.com/live/",
-      "verification": "page-verified",
+      "verification": "official-stream-listed",
       "description": "News and business from an African perspective.",
       "color": "#203c59",
       "source": "official",
-      "reviewedAt": "2026-11-01",
-      "mode": "external",
-      "rights": "link-only",
+      "reviewedAt": "2026-11-02",
+      "mode": "youtube",
+      "rights": "provider-embed",
       "geo": {
         "status": "provider-controlled"
       },
       "drm": "unknown",
-      "sourceEvidence": "https://www.africanews.com/live/"
+      "sourceEvidence": "https://www.youtube.com/watch?v=NQjabLGdP5g",
+      "videoId": "NQjabLGdP5g",
+      "officialChannel": "https://www.youtube.com/@africanews",
+      "streamNote": "Official Africanews English stream.",
+      "rightsEvidence": "https://www.youtube.com/watch?v=NQjabLGdP5g",
+      "embedStatus": "source-checked-awaiting-browser-test",
+      "reviewExpiresAt": "2026-12-02T00:00:00Z",
+      "streamStatus": "official-embed"
     },
     {
       "id": "cna",
@@ -386,18 +423,25 @@
       "language": "English",
       "category": "News",
       "officialUrl": "https://abcnews.com/Live",
-      "verification": "page-verified",
+      "verification": "official-stream-listed",
       "description": "Rolling news and scheduled reporting from ABC News.",
       "color": "#367c9a",
       "source": "official",
-      "reviewedAt": "2026-11-01",
-      "mode": "external",
-      "rights": "link-only",
+      "reviewedAt": "2026-11-02",
+      "mode": "youtube",
+      "rights": "provider-embed",
       "geo": {
         "status": "provider-controlled"
       },
       "drm": "unknown",
-      "sourceEvidence": "https://abcnews.com/Live"
+      "sourceEvidence": "https://www.youtube.com/watch?v=M4j8Jgs7ljU",
+      "videoId": "M4j8Jgs7ljU",
+      "officialChannel": "https://www.youtube.com/@ABCNews",
+      "streamNote": "Daily ABC News Live stream; the official live link is available if this broadcast ends.",
+      "rightsEvidence": "https://www.youtube.com/watch?v=M4j8Jgs7ljU",
+      "embedStatus": "source-checked-awaiting-browser-test",
+      "reviewExpiresAt": "2026-11-04T00:00:00Z",
+      "streamStatus": "official-embed"
     },
     {
       "id": "cbs",
@@ -408,18 +452,25 @@
       "language": "English",
       "category": "News",
       "officialUrl": "https://www.cbsnews.com/live/",
-      "verification": "page-verified",
+      "verification": "official-stream-listed",
       "description": "A free news stream with national reporting and live events.",
       "color": "#705674",
       "source": "official",
-      "reviewedAt": "2026-11-01",
-      "mode": "external",
-      "rights": "link-only",
+      "reviewedAt": "2026-11-02",
+      "mode": "youtube",
+      "rights": "provider-embed",
       "geo": {
         "status": "provider-controlled"
       },
       "drm": "unknown",
-      "sourceEvidence": "https://www.cbsnews.com/live/"
+      "sourceEvidence": "https://www.youtube.com/watch?v=Y1cGzQM1gy0",
+      "videoId": "Y1cGzQM1gy0",
+      "officialChannel": "https://www.youtube.com/@CBSNews",
+      "streamNote": "Official CBS News 24/7 stream.",
+      "rightsEvidence": "https://www.youtube.com/watch?v=Y1cGzQM1gy0",
+      "embedStatus": "source-checked-awaiting-browser-test",
+      "reviewExpiresAt": "2026-12-02T00:00:00Z",
+      "streamStatus": "official-embed"
     },
     {
       "id": "nbc",
@@ -430,18 +481,25 @@
       "language": "English",
       "category": "News",
       "officialUrl": "https://www.nbcnews.com/now",
-      "verification": "candidate",
+      "verification": "official-stream-listed",
       "description": "Live news programming and reporting from NBC News.",
       "color": "#887341",
       "source": "official",
-      "reviewedAt": "2026-11-01",
-      "mode": "external",
-      "rights": "link-only",
+      "reviewedAt": "2026-11-02",
+      "mode": "youtube",
+      "rights": "provider-embed",
       "geo": {
         "status": "provider-controlled"
       },
       "drm": "unknown",
-      "sourceEvidence": "https://www.nbcnews.com/now"
+      "sourceEvidence": "https://www.youtube.com/watch?v=R6khjqIPmVA",
+      "videoId": "R6khjqIPmVA",
+      "officialChannel": "https://www.youtube.com/@NBCNews",
+      "streamNote": "Daily NBC News NOW stream; the official live link is available if this broadcast ends.",
+      "rightsEvidence": "https://www.youtube.com/watch?v=R6khjqIPmVA",
+      "embedStatus": "source-checked-awaiting-browser-test",
+      "reviewExpiresAt": "2026-11-04T00:00:00Z",
+      "streamStatus": "official-embed"
     },
     {
       "id": "pbs",
@@ -463,7 +521,11 @@
         "status": "provider-controlled"
       },
       "drm": "unknown",
-      "sourceEvidence": "https://www.pbs.org/newshour/video"
+      "sourceEvidence": "https://www.pbs.org/newshour/video",
+      "streamStatus": "scheduled-programs",
+      "streamNote": "PBS News Hour provides scheduled programs and event streams; no continuous matching feed was selected.",
+      "streamEvidence": "https://www.pbs.org/newshour/how-to-watch-pbs-newshour",
+      "streamReviewedAt": "2026-11-02"
     },
     {
       "id": "esa",
@@ -485,7 +547,11 @@
         "status": "provider-controlled"
       },
       "drm": "unknown",
-      "sourceEvidence": "https://watch.esa.int/"
+      "sourceEvidence": "https://watch.esa.int/",
+      "streamStatus": "official-site-player",
+      "streamNote": "ESA Web TV is available at its official site; a reusable third-party embed was not established.",
+      "streamEvidence": "https://watch.esa.int/",
+      "streamReviewedAt": "2026-11-02"
     },
     {
       "id": "aljazeera-ar",
@@ -496,18 +562,25 @@
       "language": "Arabic",
       "category": "News",
       "officialUrl": "https://www.aljazeera.net/video/live",
-      "verification": "page-verified",
+      "verification": "official-stream-listed",
       "description": "Arabic-language reporting, interviews, and current affairs.",
       "color": "#243e43",
       "source": "official",
-      "reviewedAt": "2026-11-01",
-      "mode": "external",
-      "rights": "link-only",
+      "reviewedAt": "2026-11-02",
+      "mode": "youtube",
+      "rights": "provider-embed",
       "geo": {
         "status": "provider-controlled"
       },
       "drm": "unknown",
-      "sourceEvidence": "https://www.aljazeera.net/video/live"
+      "sourceEvidence": "https://www.youtube.com/watch?v=FelGGahCbS8",
+      "videoId": "FelGGahCbS8",
+      "officialChannel": "https://www.youtube.com/@aljazeera",
+      "streamNote": "Official Al Jazeera Arabic live stream.",
+      "rightsEvidence": "https://www.youtube.com/watch?v=FelGGahCbS8",
+      "embedStatus": "source-checked-awaiting-browser-test",
+      "reviewExpiresAt": "2026-12-02T00:00:00Z",
+      "streamStatus": "official-embed"
     },
     {
       "id": "sky-ar",
@@ -518,18 +591,25 @@
       "language": "Arabic",
       "category": "News",
       "officialUrl": "https://www.skynewsarabia.com/web/live",
-      "verification": "candidate",
+      "verification": "official-stream-listed",
       "description": "Regional and world news in Arabic.",
       "color": "#8a4c40",
       "source": "official",
-      "reviewedAt": "2026-11-01",
-      "mode": "external",
-      "rights": "link-only",
+      "reviewedAt": "2026-11-02",
+      "mode": "youtube",
+      "rights": "provider-embed",
       "geo": {
         "status": "provider-controlled"
       },
       "drm": "unknown",
-      "sourceEvidence": "https://www.skynewsarabia.com/web/live"
+      "sourceEvidence": "https://www.youtube.com/watch?v=ppgTP8xQQsM",
+      "videoId": "ppgTP8xQQsM",
+      "officialChannel": "https://www.youtube.com/@SkyNewsArabia",
+      "streamNote": "Official Sky News Arabia stream.",
+      "rightsEvidence": "https://www.youtube.com/watch?v=ppgTP8xQQsM",
+      "embedStatus": "source-checked-awaiting-browser-test",
+      "reviewExpiresAt": "2026-12-02T00:00:00Z",
+      "streamStatus": "official-embed"
     },
     {
       "id": "alarabiya",
@@ -540,18 +620,25 @@
       "language": "Arabic",
       "category": "News",
       "officialUrl": "https://www.alarabiya.net/live-stream",
-      "verification": "candidate",
+      "verification": "official-stream-listed",
       "description": "Arabic-language news and current-affairs coverage.",
       "color": "#367c9a",
       "source": "official",
-      "reviewedAt": "2026-11-01",
-      "mode": "external",
-      "rights": "link-only",
+      "reviewedAt": "2026-11-02",
+      "mode": "youtube",
+      "rights": "provider-embed",
       "geo": {
         "status": "provider-controlled"
       },
       "drm": "unknown",
-      "sourceEvidence": "https://www.alarabiya.net/live-stream"
+      "sourceEvidence": "https://www.youtube.com/watch?v=n7eQejkXbnM",
+      "videoId": "n7eQejkXbnM",
+      "officialChannel": "https://www.youtube.com/@AlArabiya",
+      "streamNote": "Official Al Arabiya live stream.",
+      "rightsEvidence": "https://www.youtube.com/watch?v=n7eQejkXbnM",
+      "embedStatus": "source-checked-awaiting-browser-test",
+      "reviewExpiresAt": "2026-12-02T00:00:00Z",
+      "streamStatus": "official-embed"
     },
     {
       "id": "trthaber",
@@ -562,18 +649,25 @@
       "language": "Turkish",
       "category": "News",
       "officialUrl": "https://www.trthaber.com/canli-yayin-izle.html",
-      "verification": "page-verified",
+      "verification": "official-stream-listed",
       "description": "Turkish national and international news.",
       "color": "#705674",
       "source": "official",
-      "reviewedAt": "2026-11-01",
-      "mode": "external",
-      "rights": "link-only",
+      "reviewedAt": "2026-11-02",
+      "mode": "youtube",
+      "rights": "provider-embed",
       "geo": {
         "status": "provider-controlled"
       },
       "drm": "unknown",
-      "sourceEvidence": "https://www.trthaber.com/canli-yayin-izle.html"
+      "sourceEvidence": "https://www.youtube.com/watch?v=CLQoypiXzQs",
+      "videoId": "CLQoypiXzQs",
+      "officialChannel": "https://www.youtube.com/user/trthaber",
+      "streamNote": "Official TRT Haber live stream.",
+      "rightsEvidence": "https://www.youtube.com/watch?v=CLQoypiXzQs",
+      "embedStatus": "source-checked-awaiting-browser-test",
+      "reviewExpiresAt": "2026-12-02T00:00:00Z",
+      "streamStatus": "official-embed"
     },
     {
       "id": "rtve24",
@@ -584,18 +678,25 @@
       "language": "Spanish",
       "category": "News",
       "officialUrl": "https://www.rtve.es/play/videos/directo/24h/",
-      "verification": "page-verified",
+      "verification": "official-stream-listed",
       "description": "Public-service news in Spanish; provider territory rules apply.",
       "color": "#887341",
       "source": "official",
-      "reviewedAt": "2026-11-01",
-      "mode": "external",
-      "rights": "link-only",
+      "reviewedAt": "2026-11-02",
+      "mode": "youtube",
+      "rights": "provider-embed",
       "geo": {
         "status": "provider-controlled"
       },
       "drm": "unknown",
-      "sourceEvidence": "https://www.rtve.es/play/videos/directo/24h/"
+      "sourceEvidence": "https://www.youtube.com/watch?v=b4tE5aKhtlg",
+      "videoId": "b4tE5aKhtlg",
+      "officialChannel": "https://www.youtube.com/@rtvenoticias",
+      "streamNote": "Official RTVE Canal 24H stream.",
+      "rightsEvidence": "https://www.youtube.com/watch?v=b4tE5aKhtlg",
+      "embedStatus": "source-checked-awaiting-browser-test",
+      "reviewExpiresAt": "2026-12-02T00:00:00Z",
+      "streamStatus": "official-embed"
     },
     {
       "id": "rainews",
@@ -617,7 +718,11 @@
         "status": "provider-controlled"
       },
       "drm": "unknown",
-      "sourceEvidence": "https://www.rainews.it/notiziari/rainews24"
+      "sourceEvidence": "https://www.rainews.it/notiziari/rainews24",
+      "streamStatus": "official-site-player",
+      "streamNote": "Rai News 24 provides an official player; a permitted, working in-app embed was not established.",
+      "streamEvidence": "https://www.rainews.it/notiziari/rainews24",
+      "streamReviewedAt": "2026-11-02"
     },
     {
       "id": "rtp",
@@ -639,7 +744,11 @@
         "status": "provider-controlled"
       },
       "drm": "unknown",
-      "sourceEvidence": "https://www.rtp.pt/play/direto/rtp3"
+      "sourceEvidence": "https://www.rtp.pt/play/direto/rtp3",
+      "streamStatus": "official-site-player",
+      "streamNote": "RTP Notícias provides its official RTP Play player; third-party embedding was not established.",
+      "streamEvidence": "https://www.rtp.pt/play/direto/rtp3",
+      "streamReviewedAt": "2026-11-02"
     },
     {
       "id": "ndtv",
@@ -661,7 +770,11 @@
         "status": "provider-controlled"
       },
       "drm": "unknown",
-      "sourceEvidence": "https://www.ndtv.com/livetv-ndtv24x7"
+      "sourceEvidence": "https://www.ndtv.com/livetv-ndtv24x7",
+      "streamStatus": "event-streams-only",
+      "streamNote": "The official YouTube live page currently selects an individual interview/event rather than the NDTV 24x7 linear channel.",
+      "streamEvidence": "https://www.youtube.com/@NDTV/streams",
+      "streamReviewedAt": "2026-11-02"
     },
     {
       "id": "wion",
@@ -683,7 +796,11 @@
         "status": "provider-controlled"
       },
       "drm": "unknown",
-      "sourceEvidence": "https://www.wionews.com/live-tv"
+      "sourceEvidence": "https://www.wionews.com/live-tv",
+      "streamStatus": "event-streams-only",
+      "streamNote": "The official YouTube live page currently selects event coverage rather than the full WION linear channel.",
+      "streamEvidence": "https://www.youtube.com/@WION/streams",
+      "streamReviewedAt": "2026-11-02"
     },
     {
       "id": "abc-au",
@@ -694,18 +811,26 @@
       "language": "English",
       "category": "News",
       "officialUrl": "https://www.abc.net.au/news/newschannel",
-      "verification": "page-verified",
+      "verification": "official-stream-listed",
       "description": "Australia’s public news channel. Official-site viewing only.",
       "color": "#367c9a",
       "source": "official",
-      "reviewedAt": "2026-11-01",
-      "mode": "external",
-      "rights": "link-only",
+      "reviewedAt": "2026-11-02",
+      "mode": "youtube",
+      "rights": "provider-embed",
       "geo": {
         "status": "provider-controlled"
       },
       "drm": "unknown",
-      "sourceEvidence": "https://www.abc.net.au/news/newschannel"
+      "sourceEvidence": "https://www.youtube.com/watch?v=vOTiJkg1voo",
+      "videoId": "vOTiJkg1voo",
+      "officialChannel": "https://www.youtube.com/@abcnewsaustralia",
+      "streamNote": "Official ABC News Australia stream. ABC limits this embedding tool to non-commercial use.",
+      "rightsEvidence": "https://www.youtube.com/watch?v=vOTiJkg1voo",
+      "embedStatus": "source-checked-awaiting-browser-test",
+      "reviewExpiresAt": "2026-12-02T00:00:00Z",
+      "streamStatus": "official-embed",
+      "usageRestriction": "non-commercial"
     },
     {
       "id": "tvp",
@@ -716,18 +841,25 @@
       "language": "English",
       "category": "News",
       "officialUrl": "https://www.tvpworld.com/",
-      "verification": "candidate",
+      "verification": "official-stream-listed",
       "description": "English-language international news with a Central European perspective.",
       "color": "#705674",
       "source": "official",
-      "reviewedAt": "2026-11-01",
-      "mode": "external",
-      "rights": "link-only",
+      "reviewedAt": "2026-11-02",
+      "mode": "youtube",
+      "rights": "provider-embed",
       "geo": {
         "status": "provider-controlled"
       },
       "drm": "unknown",
-      "sourceEvidence": "https://www.tvpworld.com/"
+      "sourceEvidence": "https://www.youtube.com/watch?v=tvXWIgsWuK0",
+      "videoId": "tvXWIgsWuK0",
+      "officialChannel": "https://www.youtube.com/@TVPWorld",
+      "streamNote": "Official TVP World live stream.",
+      "rightsEvidence": "https://www.youtube.com/watch?v=tvXWIgsWuK0",
+      "embedStatus": "source-checked-awaiting-browser-test",
+      "reviewExpiresAt": "2026-12-02T00:00:00Z",
+      "streamStatus": "official-embed"
     },
     {
       "id": "svt",
@@ -749,7 +881,11 @@
         "status": "provider-controlled"
       },
       "drm": "unknown",
-      "sourceEvidence": "https://www.svtplay.se/kanaler/svt1"
+      "sourceEvidence": "https://www.svtplay.se/kanaler/svt1",
+      "streamStatus": "provider-region-rules",
+      "streamNote": "SVT Play applies location and program-rights restrictions. No authorized third-party embed was established.",
+      "streamEvidence": "https://www.svtplay.se/kanaler/svt1",
+      "streamReviewedAt": "2026-11-02"
     },
     {
       "id": "tagesschau",
@@ -771,7 +907,11 @@
         "status": "provider-controlled"
       },
       "drm": "unknown",
-      "sourceEvidence": "https://www.tagesschau.de/multimedia/livestreams"
+      "sourceEvidence": "https://www.tagesschau.de/multimedia/livestreams",
+      "streamStatus": "provider-region-rules",
+      "streamNote": "The official site distinguishes national and international streams. No reusable player was established for Atlas.",
+      "streamEvidence": "https://www.tagesschau.de/multimedia/livestreams/index.htm",
+      "streamReviewedAt": "2026-11-02"
     },
     {
       "id": "franceinfo",
@@ -782,18 +922,25 @@
       "language": "French",
       "category": "News",
       "officialUrl": "https://www.franceinfo.fr/en-direct/tv.html",
-      "verification": "candidate",
+      "verification": "official-stream-listed",
       "description": "French public-service news television.",
       "color": "#203c59",
       "source": "official",
-      "reviewedAt": "2026-11-01",
-      "mode": "external",
-      "rights": "link-only",
+      "reviewedAt": "2026-11-02",
+      "mode": "youtube",
+      "rights": "provider-embed",
       "geo": {
         "status": "provider-controlled"
       },
       "drm": "unknown",
-      "sourceEvidence": "https://www.franceinfo.fr/en-direct/tv.html"
+      "sourceEvidence": "https://www.youtube.com/watch?v=NG7ZX42nZKc",
+      "videoId": "NG7ZX42nZKc",
+      "officialChannel": "https://www.youtube.com/@franceinfo",
+      "streamNote": "Official franceinfo continuous news stream.",
+      "rightsEvidence": "https://www.youtube.com/watch?v=NG7ZX42nZKc",
+      "embedStatus": "source-checked-awaiting-browser-test",
+      "reviewExpiresAt": "2026-12-02T00:00:00Z",
+      "streamStatus": "official-embed"
     },
     {
       "id": "bfm",
@@ -815,7 +962,11 @@
         "status": "provider-controlled"
       },
       "drm": "unknown",
-      "sourceEvidence": "https://www.bfmtv.com/en-direct/"
+      "sourceEvidence": "https://www.bfmtv.com/en-direct/",
+      "streamStatus": "different-feed",
+      "streamNote": "BFMTV’s YouTube Live destination currently selects BFM2. Atlas does not silently substitute a sister channel.",
+      "streamEvidence": "https://www.youtube.com/@BFMTV/live",
+      "streamReviewedAt": "2026-11-02"
     },
     {
       "id": "lcp",
@@ -837,7 +988,11 @@
         "status": "provider-controlled"
       },
       "drm": "unknown",
-      "sourceEvidence": "https://www.lcp.fr/le-live"
+      "sourceEvidence": "https://www.lcp.fr/le-live",
+      "streamStatus": "scheduled-programs",
+      "streamNote": "LCP’s YouTube Live destination selected an upcoming parliamentary session, not a continuous station feed.",
+      "streamEvidence": "https://www.youtube.com/channel/UCHGFbA0KWBgf6gMbyUCZeCQ/live",
+      "streamReviewedAt": "2026-11-02"
     },
     {
       "id": "publicsenat",
@@ -859,7 +1014,11 @@
         "status": "provider-controlled"
       },
       "drm": "unknown",
-      "sourceEvidence": "https://www.publicsenat.fr/"
+      "sourceEvidence": "https://www.publicsenat.fr/",
+      "streamStatus": "official-site-player",
+      "streamNote": "Public Sénat publishes an official live-player page, but no matching continuous YouTube broadcast was found.",
+      "streamEvidence": "https://www.publicsenat.fr/live-player",
+      "streamReviewedAt": "2026-11-02"
     },
     {
       "id": "tv5monde",
@@ -881,7 +1040,11 @@
         "status": "provider-controlled"
       },
       "drm": "unknown",
-      "sourceEvidence": "https://www.tv5monde.com/"
+      "sourceEvidence": "https://www.tv5monde.com/",
+      "streamStatus": "regional-services",
+      "streamNote": "TV5MONDE Info’s YouTube channel does not provide a matching continuous regional TV5MONDE feed.",
+      "streamEvidence": "https://www.youtube.com/@TV5MONDEInfo/live",
+      "streamReviewedAt": "2026-11-02"
     },
     {
       "id": "tvpublica",
@@ -892,18 +1055,25 @@
       "language": "Spanish",
       "category": "Culture",
       "officialUrl": "https://www.tvpublica.com.ar/vivo",
-      "verification": "page-verified",
+      "verification": "official-stream-listed",
       "description": "Argentine public television through its official live destination.",
       "color": "#887341",
       "source": "official",
-      "reviewedAt": "2026-11-01",
-      "mode": "external",
-      "rights": "link-only",
+      "reviewedAt": "2026-11-02",
+      "mode": "youtube",
+      "rights": "provider-embed",
       "geo": {
         "status": "provider-controlled"
       },
       "drm": "unknown",
-      "sourceEvidence": "https://www.tvpublica.com.ar/vivo"
+      "sourceEvidence": "https://www.youtube.com/watch?v=RxN5eh8YTRw",
+      "videoId": "RxN5eh8YTRw",
+      "officialChannel": "https://www.youtube.com/@CanalSieteOk",
+      "streamNote": "Official Canal Siete linear feed, separate from individual program streams.",
+      "rightsEvidence": "https://www.youtube.com/watch?v=RxN5eh8YTRw",
+      "embedStatus": "source-checked-awaiting-browser-test",
+      "reviewExpiresAt": "2026-12-02T00:00:00Z",
+      "streamStatus": "official-embed"
     },
     {
       "id": "tvbrasil",
@@ -925,7 +1095,11 @@
         "status": "provider-controlled"
       },
       "drm": "unknown",
-      "sourceEvidence": "https://www.tvbrasil.ebc.com.br/webtv"
+      "sourceEvidence": "https://www.tvbrasil.ebc.com.br/webtv",
+      "streamStatus": "scheduled-programs",
+      "streamNote": "TV Brasil’s official channel listed upcoming and archived news programs rather than an active continuous feed.",
+      "streamEvidence": "https://www.youtube.com/@tvbrasil/streams",
+      "streamReviewedAt": "2026-11-02"
     },
     {
       "id": "24chile",
@@ -936,18 +1110,25 @@
       "language": "Spanish",
       "category": "News",
       "officialUrl": "https://www.24horas.cl/envivo",
-      "verification": "page-verified",
+      "verification": "official-stream-listed",
       "description": "Chilean news and live coverage from TVN.",
       "color": "#203c59",
       "source": "official",
-      "reviewedAt": "2026-11-01",
-      "mode": "external",
-      "rights": "link-only",
+      "reviewedAt": "2026-11-02",
+      "mode": "youtube",
+      "rights": "provider-embed",
       "geo": {
         "status": "provider-controlled"
       },
       "drm": "unknown",
-      "sourceEvidence": "https://www.24horas.cl/envivo"
+      "sourceEvidence": "https://www.youtube.com/watch?v=VGaoFnRtL7s",
+      "videoId": "VGaoFnRtL7s",
+      "officialChannel": "https://www.youtube.com/user/24horas",
+      "streamNote": "Official free 24 Play / TVN Chile news stream. The provider’s full television schedule may differ.",
+      "rightsEvidence": "https://www.youtube.com/watch?v=VGaoFnRtL7s",
+      "embedStatus": "source-checked-awaiting-browser-test",
+      "reviewExpiresAt": "2026-12-02T00:00:00Z",
+      "streamStatus": "official-embed"
     },
     {
       "id": "ntn24",
@@ -958,18 +1139,25 @@
       "language": "Spanish",
       "category": "News",
       "officialUrl": "https://www.ntn24.com/",
-      "verification": "page-verified",
+      "verification": "official-stream-listed",
       "description": "International news with a Latin American focus.",
       "color": "#243e43",
       "source": "official",
-      "reviewedAt": "2026-11-01",
-      "mode": "external",
-      "rights": "link-only",
+      "reviewedAt": "2026-11-02",
+      "mode": "youtube",
+      "rights": "provider-embed",
       "geo": {
         "status": "provider-controlled"
       },
       "drm": "unknown",
-      "sourceEvidence": "https://www.ntn24.com/"
+      "sourceEvidence": "https://www.youtube.com/watch?v=GNyQH9R1_V0",
+      "videoId": "GNyQH9R1_V0",
+      "officialChannel": "https://www.youtube.com/@ntn24",
+      "streamNote": "Official NTN24 live signal.",
+      "rightsEvidence": "https://www.youtube.com/watch?v=GNyQH9R1_V0",
+      "embedStatus": "source-checked-awaiting-browser-test",
+      "reviewExpiresAt": "2026-12-02T00:00:00Z",
+      "streamStatus": "official-embed"
     },
     {
       "id": "sabc",
@@ -991,7 +1179,11 @@
         "status": "provider-controlled"
       },
       "drm": "unknown",
-      "sourceEvidence": "https://www.sabcnews.com/sabcnews/"
+      "sourceEvidence": "https://www.sabcnews.com/sabcnews/",
+      "streamStatus": "scheduled-programs",
+      "streamNote": "SABC News’s YouTube Live destination selected a scheduled briefing, not the full linear news channel.",
+      "streamEvidence": "https://www.youtube.com/@sabcdigitalnews/live",
+      "streamReviewedAt": "2026-11-02"
     },
     {
       "id": "euronews-fr",
@@ -1002,18 +1194,25 @@
       "language": "French",
       "category": "News",
       "officialUrl": "https://fr.euronews.com/live",
-      "verification": "page-verified",
+      "verification": "official-stream-listed",
       "description": "European and international news in French.",
       "color": "#367c9a",
       "source": "official",
-      "reviewedAt": "2026-11-01",
-      "mode": "external",
-      "rights": "link-only",
+      "reviewedAt": "2026-11-02",
+      "mode": "youtube",
+      "rights": "provider-embed",
       "geo": {
         "status": "provider-controlled"
       },
       "drm": "unknown",
-      "sourceEvidence": "https://fr.euronews.com/live"
+      "sourceEvidence": "https://www.youtube.com/watch?v=NiRIbKwAejk",
+      "videoId": "NiRIbKwAejk",
+      "officialChannel": "https://www.youtube.com/@euronewsfr",
+      "streamNote": "Official Euronews French stream.",
+      "rightsEvidence": "https://www.youtube.com/watch?v=NiRIbKwAejk",
+      "embedStatus": "source-checked-awaiting-browser-test",
+      "reviewExpiresAt": "2026-12-02T00:00:00Z",
+      "streamStatus": "official-embed"
     },
     {
       "id": "euronews-es",
@@ -1024,18 +1223,25 @@
       "language": "Spanish",
       "category": "News",
       "officialUrl": "https://es.euronews.com/live",
-      "verification": "page-verified",
+      "verification": "official-stream-listed",
       "description": "European and international news in Spanish.",
       "color": "#705674",
       "source": "official",
-      "reviewedAt": "2026-11-01",
-      "mode": "external",
-      "rights": "link-only",
+      "reviewedAt": "2026-11-02",
+      "mode": "youtube",
+      "rights": "provider-embed",
       "geo": {
         "status": "provider-controlled"
       },
       "drm": "unknown",
-      "sourceEvidence": "https://es.euronews.com/live"
+      "sourceEvidence": "https://www.youtube.com/watch?v=O9mOtdZ-nSk",
+      "videoId": "O9mOtdZ-nSk",
+      "officialChannel": "https://www.youtube.com/@euronewses",
+      "streamNote": "Official Euronews Spanish stream.",
+      "rightsEvidence": "https://www.youtube.com/watch?v=O9mOtdZ-nSk",
+      "embedStatus": "source-checked-awaiting-browser-test",
+      "reviewExpiresAt": "2026-12-02T00:00:00Z",
+      "streamStatus": "official-embed"
     },
     {
       "id": "africanews-fr",
@@ -1046,18 +1252,25 @@
       "language": "French",
       "category": "News",
       "officialUrl": "https://fr.africanews.com/live/",
-      "verification": "page-verified",
+      "verification": "official-stream-listed",
       "description": "African news, business, and culture in French.",
       "color": "#887341",
       "source": "official",
-      "reviewedAt": "2026-11-01",
-      "mode": "external",
-      "rights": "link-only",
+      "reviewedAt": "2026-11-02",
+      "mode": "youtube",
+      "rights": "provider-embed",
       "geo": {
         "status": "provider-controlled"
       },
       "drm": "unknown",
-      "sourceEvidence": "https://fr.africanews.com/live/"
+      "sourceEvidence": "https://www.youtube.com/watch?v=b6R9-7KZ8YM",
+      "videoId": "b6R9-7KZ8YM",
+      "officialChannel": "https://www.youtube.com/@africanewsfr",
+      "streamNote": "Official Africanews French stream.",
+      "rightsEvidence": "https://www.youtube.com/watch?v=b6R9-7KZ8YM",
+      "embedStatus": "source-checked-awaiting-browser-test",
+      "reviewExpiresAt": "2026-12-02T00:00:00Z",
+      "streamStatus": "official-embed"
     },
     {
       "id": "cgtn",
@@ -1068,18 +1281,25 @@
       "language": "English",
       "category": "News",
       "officialUrl": "https://www.cgtn.com/tv",
-      "verification": "candidate",
+      "verification": "official-stream-listed",
       "description": "International news and programs from China.",
       "color": "#3f6458",
       "source": "official",
-      "reviewedAt": "2026-11-01",
-      "mode": "external",
-      "rights": "link-only",
+      "reviewedAt": "2026-11-02",
+      "mode": "youtube",
+      "rights": "provider-embed",
       "geo": {
         "status": "provider-controlled"
       },
       "drm": "unknown",
-      "sourceEvidence": "https://www.cgtn.com/tv"
+      "sourceEvidence": "https://www.youtube.com/watch?v=0i7n3r01L2U",
+      "videoId": "0i7n3r01L2U",
+      "officialChannel": "https://www.youtube.com/@cgtn",
+      "streamNote": "Official CGTN English stream.",
+      "rightsEvidence": "https://www.youtube.com/watch?v=0i7n3r01L2U",
+      "embedStatus": "source-checked-awaiting-browser-test",
+      "reviewExpiresAt": "2026-12-02T00:00:00Z",
+      "streamStatus": "official-embed"
     },
     {
       "id": "kbs",
@@ -1101,7 +1321,11 @@
         "status": "provider-controlled"
       },
       "drm": "unknown",
-      "sourceEvidence": "https://kbsworld.kbs.co.kr/"
+      "sourceEvidence": "https://kbsworld.kbs.co.kr/",
+      "streamStatus": "different-feed",
+      "streamNote": "KBS WORLD’s live choices are a K-pop stream and KBS KOREA. Neither was substituted for the KBS WORLD linear channel.",
+      "streamEvidence": "https://www.youtube.com/@kbsworldtv/streams",
+      "streamReviewedAt": "2026-11-02"
     },
     {
       "id": "taiwanplus",
@@ -1123,7 +1347,11 @@
         "status": "provider-controlled"
       },
       "drm": "unknown",
-      "sourceEvidence": "https://www.taiwanplus.com/live"
+      "sourceEvidence": "https://www.taiwanplus.com/live",
+      "streamStatus": "no-current-live",
+      "streamNote": "TaiwanPlus’s official Livestream channel did not expose an active video during this review.",
+      "streamEvidence": "https://www.youtube.com/@TaiwanPlusLive/streams",
+      "streamReviewedAt": "2026-11-02"
     },
     {
       "id": "thaipbs",
@@ -1134,18 +1362,26 @@
       "language": "Thai",
       "category": "Culture",
       "officialUrl": "https://www.thaipbs.or.th/live",
-      "verification": "page-verified",
+      "verification": "official-stream-listed",
       "description": "Thai public-service television and cultural programming.",
       "color": "#8a4c40",
       "source": "official",
-      "reviewedAt": "2026-11-01",
-      "mode": "external",
-      "rights": "link-only",
+      "reviewedAt": "2026-11-02",
+      "mode": "youtube",
+      "rights": "provider-embed",
       "geo": {
         "status": "provider-controlled"
       },
       "drm": "unknown",
-      "sourceEvidence": "https://www.thaipbs.or.th/live"
+      "sourceEvidence": "https://www.youtube.com/watch?v=6UVLHmzUP2s",
+      "videoId": "6UVLHmzUP2s",
+      "officialChannel": "https://www.youtube.com/@ThaiPBS",
+      "streamNote": "Official scheduled Thai PBS program stream, not a guaranteed continuous channel.",
+      "rightsEvidence": "https://www.youtube.com/watch?v=6UVLHmzUP2s",
+      "embedStatus": "source-checked-awaiting-browser-test",
+      "reviewExpiresAt": "2026-11-04T00:00:00Z",
+      "streamStatus": "official-embed",
+      "streamCoverage": "scheduled"
     }
   ]
 }

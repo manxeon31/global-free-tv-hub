@@ -1,3 +1,5 @@
+> Latest source expansion: see [Streaming-source review](STREAM-SOURCES.md) for the current 32-player catalog and unresolved entries. The initial nine-player expansion is recorded below.
+
 # Expanded catalog and in-app playback
 
 Source review: November 1, 2026. Catalog v2 contains 50 entries across 27 countries and 11 displayed languages. Language variants and the NASA ISS feed are separate entries; this is not a count of 50 independent networks. Scheduled/video destinations are described as such. Origin country is not a distribution entitlement.
