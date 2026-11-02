@@ -1,3 +1,5 @@
+> Current update: see [Catalog expansion](CATALOG-EXPANSION.md). The catalog now has 50 entries and official YouTube in-app playback. The original planning baseline below describes the six-entry starter; later-phase API/database work remains proposed.
+
 # Global Free TV Hub: implementation and delivery plan
 
 Prepared November 1, 2026. Product name in the starter: **Atlas**. Target: a curated, web-first discovery experience that progressively adds authorized browser playback. This document distinguishes the shipped static starter from the proposed production service.

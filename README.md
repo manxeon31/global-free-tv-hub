@@ -1,6 +1,6 @@
 # Atlas · Global Free TV Hub
 
-A web-first, curated television discovery MVP. Search six initial broadcaster destinations, filter by country/language/category, save channels locally, and inspect source status. Responsive vanilla JavaScript with no framework build overhead. HLS.js is bundled for explicitly approved direct feeds; **the initial collection is official-site links, not six verified in-app streams**.
+A web-first, curated television discovery MVP. Search 50 broadcaster destinations across 27 countries and 11 languages, filter by country/language/category, save channels locally, and inspect source status. Responsive vanilla JavaScript with no framework build overhead. HLS.js is bundled for explicitly approved direct feeds; **nine entries offer an official YouTube player in the app; remaining entries link to the broadcaster**.
 
 ## Run
 
@@ -21,11 +21,11 @@ Open http://127.0.0.1:4173. `dist/` is deployable to any static host. All asset 
 2. In Actions, run **Deploy Atlas to GitHub Pages** manually.
 3. Read the deployment URL from the completed run. Expected project address is `https://manxeon31.github.io/global-free-tv-hub/`, but it is not live until deployment succeeds.
 
-CI validates pushes and pull requests. Deployment is deliberately manual so the initial public catalog and rights policy can be reviewed. GitHub Pages serves static files; it cannot run the future API or enforce territorial access. The included preview server headers do not automatically apply to Pages.
+CI validates pushes and pull requests. Deployment runs on pushes to main and can also be triggered manually. GitHub Pages serves static files; it cannot run the future API or enforce territorial access. The included preview server headers do not automatically apply to Pages.
 
 ## Curation
 
-Edit `public/catalog.json` in a reviewed pull request. Maintain stable channel IDs. `page-verified` means the official page was inspected, not that playback, rights, or global access were verified. Three destinations are labeled candidates because automated checks were blocked/unavailable.
+Edit `public/catalog.json` in a reviewed pull request. Maintain stable channel IDs. `page-verified` means the official page was inspected, not that playback, rights, or global access were verified. Entries that could not be inspected are labeled as candidates. In-app availability remains controlled by the broadcaster.
 
 `npm run import` downloads fixed IPTV-org JSON endpoints and Free-TV's playlist to ignored `work/imports/`. It never visits stream URLs, changes the public catalog, or approves rights. Imports require network access and may fail offline. Do not commit raw upstream data until its license and intended use are reviewed.
 
@@ -42,6 +42,8 @@ Direct HLS needs `mode: "hls"`, `rights: "approved"`, an HTTPS `rightsEvidence`,
 
 ## Limits
 
-No accounts, production database, EPG, source health dashboard, automated rights approval, geo service, media proxy, DRM support, or direct broadcaster feed is shipped. These are phased work in the plan. Automated unit checks do not establish real-device playback compatibility. No fabricated live status or program schedule is displayed.
+No accounts, production database, EPG, source health dashboard, automated rights approval, geo service, media proxy, DRM support, or direct HLS broadcaster feed is shipped. Official YouTube embeds are available. These are phased work in the plan. Automated unit checks do not establish real-device playback compatibility. No fabricated live status or program schedule is displayed.
 
 HLS.js is BSD-2-Clause; its license is copied to the built vendor directory. Broadcaster names remain their owners' marks; artwork uses text rather than copied logos. Project licensing must be chosen by the repository owner before external redistribution.
+
+See [catalog expansion notes](docs/CATALOG-EXPANSION.md) for official embedded-stream references, provider controls, and review rules.
