@@ -991,7 +991,7 @@
       "countryCode": "FR",
       "language": "French",
       "category": "Public affairs",
-      "officialUrl": "https://www.lcp.fr/le-live",
+      "officialUrl": "https://www.france.tv/lcp-public-senat/direct.html",
       "verification": "candidate",
       "description": "French parliamentary debates, documentaries, and public affairs.",
       "color": "#8a4c40",
@@ -1003,9 +1003,9 @@
         "status": "provider-controlled"
       },
       "drm": "unknown",
-      "sourceEvidence": "https://www.lcp.fr/le-live",
+      "sourceEvidence": "https://lcp.fr/",
       "streamStatus": "scheduled-programs",
-      "streamNote": "LCP’s YouTube Live destination selected an upcoming parliamentary session, not a continuous station feed.",
+      "streamNote": "LCP directs live viewing to france.tv. Its YouTube Live destination selected an upcoming parliamentary session rather than the continuous channel.",
       "streamEvidence": "https://www.youtube.com/channel/UCHGFbA0KWBgf6gMbyUCZeCQ/live",
       "streamReviewedAt": "2026-11-02"
     },

@@ -64,3 +64,5 @@ The source check used broadcaster-owned channel pages and official viewing desti
 NHK’s YouTube feed focuses on news and may omit parts of the full NHK WORLD television schedule. Thai PBS is a scheduled program stream. NBC and ABC US use daily broadcasts; these and the scheduled Thai PBS entry have short review expiries. Every configured YouTube entry has a Latest official live broadcast link for provider-side changes. Fixed video IDs can end; Atlas does not claim automatic discovery of replacement videos.
 
 FashionTV’s own live page embeds Dailymotion video x3m6nld, but that player returned Forbidden in the test browser. The source was documented rather than presented as working. A matching, working, provider-authorized in-app source is still needed for the remaining external entries.
+
+LCP fallback correction: the former /le-live page returned a missing-page notice. The current LCP homepage directs viewers to the official france.tv LCP/Public Sénat live page; Atlas now uses that destination.
