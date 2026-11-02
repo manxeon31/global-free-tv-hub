@@ -1,5 +1,5 @@
 {
-  "version": 4,
+  "version": 5,
   "reviewedAt": "2026-11-02",
   "channels": [
     {
@@ -160,10 +160,11 @@
       "officialChannel": "https://www.youtube.com/@NHKWORLDJAPAN",
       "streamNote": "Official NHK news stream. Some programs from the full television schedule are not carried here.",
       "rightsEvidence": "https://www.youtube.com/watch?v=IimtbuqYIE8",
-      "embedStatus": "source-checked-awaiting-browser-test",
+      "embedStatus": "player-ready-tested",
       "reviewExpiresAt": "2026-12-02T00:00:00Z",
       "streamStatus": "official-embed",
-      "streamCoverage": "news-only"
+      "streamCoverage": "news-only",
+      "embedTestedAt": "2026-11-02"
     },
     {
       "id": "france24-fr",
@@ -244,9 +245,10 @@
       "officialChannel": "https://www.youtube.com/@France24_ar",
       "streamNote": "Official France 24 Arabic stream.",
       "rightsEvidence": "https://www.youtube.com/watch?v=93g513Uth98",
-      "embedStatus": "source-checked-awaiting-browser-test",
+      "embedStatus": "player-ready-tested",
       "reviewExpiresAt": "2026-12-02T00:00:00Z",
-      "streamStatus": "official-embed"
+      "streamStatus": "official-embed",
+      "embedTestedAt": "2026-11-02"
     },
     {
       "id": "nasa-iss",
@@ -300,9 +302,10 @@
       "officialChannel": "https://www.youtube.com/@SkyNews",
       "streamNote": "Official Sky News live stream.",
       "rightsEvidence": "https://www.youtube.com/watch?v=umLWFz4izTM",
-      "embedStatus": "source-checked-awaiting-browser-test",
+      "embedStatus": "player-ready-tested",
       "reviewExpiresAt": "2026-12-02T00:00:00Z",
-      "streamStatus": "official-embed"
+      "streamStatus": "official-embed",
+      "embedTestedAt": "2026-11-02"
     },
     {
       "id": "euronews",
@@ -356,9 +359,10 @@
       "officialChannel": "https://www.youtube.com/@africanews",
       "streamNote": "Official Africanews English stream.",
       "rightsEvidence": "https://www.youtube.com/watch?v=NQjabLGdP5g",
-      "embedStatus": "source-checked-awaiting-browser-test",
+      "embedStatus": "player-ready-tested",
       "reviewExpiresAt": "2026-12-02T00:00:00Z",
-      "streamStatus": "official-embed"
+      "streamStatus": "official-embed",
+      "embedTestedAt": "2026-11-02"
     },
     {
       "id": "cna",
@@ -439,9 +443,10 @@
       "officialChannel": "https://www.youtube.com/@ABCNews",
       "streamNote": "Daily ABC News Live stream; the official live link is available if this broadcast ends.",
       "rightsEvidence": "https://www.youtube.com/watch?v=M4j8Jgs7ljU",
-      "embedStatus": "source-checked-awaiting-browser-test",
+      "embedStatus": "player-ready-tested",
       "reviewExpiresAt": "2026-11-04T00:00:00Z",
-      "streamStatus": "official-embed"
+      "streamStatus": "official-embed",
+      "embedTestedAt": "2026-11-02"
     },
     {
       "id": "cbs",
@@ -468,9 +473,10 @@
       "officialChannel": "https://www.youtube.com/@CBSNews",
       "streamNote": "Official CBS News 24/7 stream.",
       "rightsEvidence": "https://www.youtube.com/watch?v=Y1cGzQM1gy0",
-      "embedStatus": "source-checked-awaiting-browser-test",
+      "embedStatus": "player-ready-tested",
       "reviewExpiresAt": "2026-12-02T00:00:00Z",
-      "streamStatus": "official-embed"
+      "streamStatus": "official-embed",
+      "embedTestedAt": "2026-11-02"
     },
     {
       "id": "nbc",
@@ -497,9 +503,10 @@
       "officialChannel": "https://www.youtube.com/@NBCNews",
       "streamNote": "Daily NBC News NOW stream; the official live link is available if this broadcast ends.",
       "rightsEvidence": "https://www.youtube.com/watch?v=R6khjqIPmVA",
-      "embedStatus": "source-checked-awaiting-browser-test",
+      "embedStatus": "player-ready-tested",
       "reviewExpiresAt": "2026-11-04T00:00:00Z",
-      "streamStatus": "official-embed"
+      "streamStatus": "official-embed",
+      "embedTestedAt": "2026-11-02"
     },
     {
       "id": "pbs",
@@ -578,9 +585,10 @@
       "officialChannel": "https://www.youtube.com/@aljazeera",
       "streamNote": "Official Al Jazeera Arabic live stream.",
       "rightsEvidence": "https://www.youtube.com/watch?v=FelGGahCbS8",
-      "embedStatus": "source-checked-awaiting-browser-test",
+      "embedStatus": "player-ready-tested",
       "reviewExpiresAt": "2026-12-02T00:00:00Z",
-      "streamStatus": "official-embed"
+      "streamStatus": "official-embed",
+      "embedTestedAt": "2026-11-02"
     },
     {
       "id": "sky-ar",
@@ -607,9 +615,10 @@
       "officialChannel": "https://www.youtube.com/@SkyNewsArabia",
       "streamNote": "Official Sky News Arabia stream.",
       "rightsEvidence": "https://www.youtube.com/watch?v=ppgTP8xQQsM",
-      "embedStatus": "source-checked-awaiting-browser-test",
+      "embedStatus": "player-ready-tested",
       "reviewExpiresAt": "2026-12-02T00:00:00Z",
-      "streamStatus": "official-embed"
+      "streamStatus": "official-embed",
+      "embedTestedAt": "2026-11-02"
     },
     {
       "id": "alarabiya",
@@ -636,9 +645,10 @@
       "officialChannel": "https://www.youtube.com/@AlArabiya",
       "streamNote": "Official Al Arabiya live stream.",
       "rightsEvidence": "https://www.youtube.com/watch?v=n7eQejkXbnM",
-      "embedStatus": "source-checked-awaiting-browser-test",
+      "embedStatus": "player-ready-tested",
       "reviewExpiresAt": "2026-12-02T00:00:00Z",
-      "streamStatus": "official-embed"
+      "streamStatus": "official-embed",
+      "embedTestedAt": "2026-11-02"
     },
     {
       "id": "trthaber",
@@ -665,9 +675,10 @@
       "officialChannel": "https://www.youtube.com/user/trthaber",
       "streamNote": "Official TRT Haber live stream.",
       "rightsEvidence": "https://www.youtube.com/watch?v=CLQoypiXzQs",
-      "embedStatus": "source-checked-awaiting-browser-test",
+      "embedStatus": "player-ready-tested",
       "reviewExpiresAt": "2026-12-02T00:00:00Z",
-      "streamStatus": "official-embed"
+      "streamStatus": "official-embed",
+      "embedTestedAt": "2026-11-02"
     },
     {
       "id": "rtve24",
@@ -694,9 +705,10 @@
       "officialChannel": "https://www.youtube.com/@rtvenoticias",
       "streamNote": "Official RTVE Canal 24H stream.",
       "rightsEvidence": "https://www.youtube.com/watch?v=b4tE5aKhtlg",
-      "embedStatus": "source-checked-awaiting-browser-test",
+      "embedStatus": "player-ready-tested",
       "reviewExpiresAt": "2026-12-02T00:00:00Z",
-      "streamStatus": "official-embed"
+      "streamStatus": "official-embed",
+      "embedTestedAt": "2026-11-02"
     },
     {
       "id": "rainews",
@@ -812,7 +824,7 @@
       "category": "News",
       "officialUrl": "https://www.abc.net.au/news/newschannel",
       "verification": "official-stream-listed",
-      "description": "Australia’s public news channel. Official-site viewing only.",
+      "description": "Australia’s public news channel. Official embedded player for non-commercial viewing.",
       "color": "#367c9a",
       "source": "official",
       "reviewedAt": "2026-11-02",
@@ -827,10 +839,11 @@
       "officialChannel": "https://www.youtube.com/@abcnewsaustralia",
       "streamNote": "Official ABC News Australia stream. ABC limits this embedding tool to non-commercial use.",
       "rightsEvidence": "https://www.youtube.com/watch?v=vOTiJkg1voo",
-      "embedStatus": "source-checked-awaiting-browser-test",
+      "embedStatus": "player-ready-tested",
       "reviewExpiresAt": "2026-12-02T00:00:00Z",
       "streamStatus": "official-embed",
-      "usageRestriction": "non-commercial"
+      "usageRestriction": "non-commercial",
+      "embedTestedAt": "2026-11-02"
     },
     {
       "id": "tvp",
@@ -857,9 +870,10 @@
       "officialChannel": "https://www.youtube.com/@TVPWorld",
       "streamNote": "Official TVP World live stream.",
       "rightsEvidence": "https://www.youtube.com/watch?v=tvXWIgsWuK0",
-      "embedStatus": "source-checked-awaiting-browser-test",
+      "embedStatus": "player-ready-tested",
       "reviewExpiresAt": "2026-12-02T00:00:00Z",
-      "streamStatus": "official-embed"
+      "streamStatus": "official-embed",
+      "embedTestedAt": "2026-11-02"
     },
     {
       "id": "svt",
@@ -938,9 +952,10 @@
       "officialChannel": "https://www.youtube.com/@franceinfo",
       "streamNote": "Official franceinfo continuous news stream.",
       "rightsEvidence": "https://www.youtube.com/watch?v=NG7ZX42nZKc",
-      "embedStatus": "source-checked-awaiting-browser-test",
+      "embedStatus": "player-ready-tested",
       "reviewExpiresAt": "2026-12-02T00:00:00Z",
-      "streamStatus": "official-embed"
+      "streamStatus": "official-embed",
+      "embedTestedAt": "2026-11-02"
     },
     {
       "id": "bfm",
@@ -1071,9 +1086,10 @@
       "officialChannel": "https://www.youtube.com/@CanalSieteOk",
       "streamNote": "Official Canal Siete linear feed, separate from individual program streams.",
       "rightsEvidence": "https://www.youtube.com/watch?v=RxN5eh8YTRw",
-      "embedStatus": "source-checked-awaiting-browser-test",
+      "embedStatus": "player-ready-tested",
       "reviewExpiresAt": "2026-12-02T00:00:00Z",
-      "streamStatus": "official-embed"
+      "streamStatus": "official-embed",
+      "embedTestedAt": "2026-11-02"
     },
     {
       "id": "tvbrasil",
@@ -1126,9 +1142,10 @@
       "officialChannel": "https://www.youtube.com/user/24horas",
       "streamNote": "Official free 24 Play / TVN Chile news stream. The provider’s full television schedule may differ.",
       "rightsEvidence": "https://www.youtube.com/watch?v=VGaoFnRtL7s",
-      "embedStatus": "source-checked-awaiting-browser-test",
+      "embedStatus": "player-ready-tested",
       "reviewExpiresAt": "2026-12-02T00:00:00Z",
-      "streamStatus": "official-embed"
+      "streamStatus": "official-embed",
+      "embedTestedAt": "2026-11-02"
     },
     {
       "id": "ntn24",
@@ -1144,8 +1161,8 @@
       "color": "#243e43",
       "source": "official",
       "reviewedAt": "2026-11-02",
-      "mode": "youtube",
-      "rights": "provider-embed",
+      "mode": "external",
+      "rights": "link-only",
       "geo": {
         "status": "provider-controlled"
       },
@@ -1153,11 +1170,13 @@
       "sourceEvidence": "https://www.youtube.com/watch?v=GNyQH9R1_V0",
       "videoId": "GNyQH9R1_V0",
       "officialChannel": "https://www.youtube.com/@ntn24",
-      "streamNote": "Official NTN24 live signal.",
+      "streamNote": "NTN24’s official YouTube player returned an embedded-playback prohibition during the in-app test. Watch on the official site or open the latest official broadcast.",
       "rightsEvidence": "https://www.youtube.com/watch?v=GNyQH9R1_V0",
-      "embedStatus": "source-checked-awaiting-browser-test",
+      "embedStatus": "provider-disabled",
       "reviewExpiresAt": "2026-12-02T00:00:00Z",
-      "streamStatus": "official-embed"
+      "streamStatus": "embed-disabled",
+      "streamEvidence": "https://www.youtube.com/watch?v=GNyQH9R1_V0",
+      "streamReviewedAt": "2026-11-02"
     },
     {
       "id": "sabc",
@@ -1210,9 +1229,10 @@
       "officialChannel": "https://www.youtube.com/@euronewsfr",
       "streamNote": "Official Euronews French stream.",
       "rightsEvidence": "https://www.youtube.com/watch?v=NiRIbKwAejk",
-      "embedStatus": "source-checked-awaiting-browser-test",
+      "embedStatus": "player-ready-tested",
       "reviewExpiresAt": "2026-12-02T00:00:00Z",
-      "streamStatus": "official-embed"
+      "streamStatus": "official-embed",
+      "embedTestedAt": "2026-11-02"
     },
     {
       "id": "euronews-es",
@@ -1239,9 +1259,10 @@
       "officialChannel": "https://www.youtube.com/@euronewses",
       "streamNote": "Official Euronews Spanish stream.",
       "rightsEvidence": "https://www.youtube.com/watch?v=O9mOtdZ-nSk",
-      "embedStatus": "source-checked-awaiting-browser-test",
+      "embedStatus": "player-ready-tested",
       "reviewExpiresAt": "2026-12-02T00:00:00Z",
-      "streamStatus": "official-embed"
+      "streamStatus": "official-embed",
+      "embedTestedAt": "2026-11-02"
     },
     {
       "id": "africanews-fr",
@@ -1268,9 +1289,10 @@
       "officialChannel": "https://www.youtube.com/@africanewsfr",
       "streamNote": "Official Africanews French stream.",
       "rightsEvidence": "https://www.youtube.com/watch?v=b6R9-7KZ8YM",
-      "embedStatus": "source-checked-awaiting-browser-test",
+      "embedStatus": "player-ready-tested",
       "reviewExpiresAt": "2026-12-02T00:00:00Z",
-      "streamStatus": "official-embed"
+      "streamStatus": "official-embed",
+      "embedTestedAt": "2026-11-02"
     },
     {
       "id": "cgtn",
@@ -1297,9 +1319,10 @@
       "officialChannel": "https://www.youtube.com/@cgtn",
       "streamNote": "Official CGTN English stream.",
       "rightsEvidence": "https://www.youtube.com/watch?v=0i7n3r01L2U",
-      "embedStatus": "source-checked-awaiting-browser-test",
+      "embedStatus": "player-ready-tested",
       "reviewExpiresAt": "2026-12-02T00:00:00Z",
-      "streamStatus": "official-embed"
+      "streamStatus": "official-embed",
+      "embedTestedAt": "2026-11-02"
     },
     {
       "id": "kbs",
@@ -1378,10 +1401,11 @@
       "officialChannel": "https://www.youtube.com/@ThaiPBS",
       "streamNote": "Official scheduled Thai PBS program stream, not a guaranteed continuous channel.",
       "rightsEvidence": "https://www.youtube.com/watch?v=6UVLHmzUP2s",
-      "embedStatus": "source-checked-awaiting-browser-test",
+      "embedStatus": "player-ready-tested",
       "reviewExpiresAt": "2026-11-04T00:00:00Z",
       "streamStatus": "official-embed",
-      "streamCoverage": "scheduled"
+      "streamCoverage": "scheduled",
+      "embedTestedAt": "2026-11-02"
     }
   ]
 }

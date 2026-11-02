@@ -1,6 +1,6 @@
 # Atlas · Global Free TV Hub
 
-A web-first, curated television discovery MVP. Search 50 broadcaster destinations across 27 countries and 11 languages, filter by country/language/category, save channels locally, and inspect source status. Responsive vanilla JavaScript with no framework build overhead. HLS.js is bundled for explicitly approved direct feeds; **32 entries offer an official YouTube player in the app; 18 retain official-site viewing**.
+A web-first, curated television discovery MVP. Search 50 broadcaster destinations across 27 countries and 11 languages, filter by country/language/category, save channels locally, and inspect source status. Responsive vanilla JavaScript with no framework build overhead. HLS.js is bundled for explicitly approved direct feeds; **31 entries offer an official YouTube player in the app; 19 retain official-site viewing**.
 
 ## Run
 

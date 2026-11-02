@@ -1,4 +1,4 @@
-> Latest source expansion: see [Streaming-source review](STREAM-SOURCES.md) for the current 32-player catalog and unresolved entries. The initial nine-player expansion is recorded below.
+> Latest source expansion: see [Streaming-source review](STREAM-SOURCES.md) for the current 31-player catalog and unresolved entries. The initial nine-player expansion is recorded below.
 
 # Expanded catalog and in-app playback
 
