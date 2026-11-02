@@ -1,3 +1,4 @@
+import {startNews} from './news-feed.js?v=6';
 import {filterChannels,playbackDecision,httpsUrl} from './policy.js?v=3';
 import {loadYouTubeAPI,youtubeError} from './youtube-player.js?v=3';
 const $=s=>document.querySelector(s);
@@ -16,7 +17,7 @@ function render(){
     const decision=playbackDecision(c),card=el('article','card'),art=el('div','card-art');art.style.setProperty('--art',c.color);
     art.append(el('div','art-pattern'),el('span','badge',decision.allowed?'▶ PLAY HERE':c.verification==='candidate'?'OFFICIAL SITE · CHECK PENDING':'OFFICIAL SITE'),el('span','wordmark',c.mark));
     const favorite=el('button','favorite',saved.includes(c.id)?'★':'☆');favorite.setAttribute('aria-label',`${saved.includes(c.id)?'Unsave':'Save'} ${c.name}`);favorite.setAttribute('aria-pressed',saved.includes(c.id));favorite.onclick=()=>save(c.id);art.append(favorite);
-    const body=el('div','card-body');body.append(el('h3','',c.name),el('p','meta',`${c.country} / ${c.language}`),el('p','description',c.description));
+    const body=el('div','card-body'),news=el('div','card-news');news.dataset.newsChannel=c.id;body.append(el('h3','',c.name),el('p','meta',`${c.country} / ${c.language}`),news);
     const bottom=el('div','card-bottom'),open=el('button','',decision.allowed?'Watch here ▶':'Explore channel ↗');open.setAttribute('aria-label',`${decision.allowed?'Watch':'Explore'} ${c.name}`);open.onclick=()=>show(c,open);bottom.append(el('span','',c.category),open);body.append(bottom);card.append(art,body);$('#grid').append(card);
   }
 }
@@ -66,3 +67,5 @@ try{
   for(const field of ['country','language'])for(const value of [...new Set(channels.map(c=>c[field]))].sort()){const option=el('option','',value);option.value=value;$('#'+field).append(option);}
   for(const category of ['',...new Set(channels.map(c=>c.category))]){const b=el('button','',category||'All channels');b.dataset.category=category;b.setAttribute('aria-pressed',!category);b.onclick=()=>{state.category=category;for(const sibling of $('#categories').children)sibling.setAttribute('aria-pressed',sibling===b);render();};$('#categories').append(b);}render();
 }catch{$('#result-count').textContent='Channel collection unavailable';$('#empty').hidden=false;$('#empty').textContent='We could not load the collection. Please refresh or try again later.';}
+
+startNews({container:$("#grid"),channels:()=>channels,makeElement:el,controls:$("#news-controls"),status:$("#news-status")});
